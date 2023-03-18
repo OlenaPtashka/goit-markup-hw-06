@@ -397,7 +397,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
-          <div>
+          <div class="footer-item">
             <a class="footer-logo" href="./index.html"
               ><span class="logo-web">Web</span>Studio</a
             >
@@ -406,8 +406,8 @@
               digital marketing &amp; growth solutions.
             </p>
           </div>
-          <div>
-            <p class="social-media">Social media</p>
+          <div class="social-footer-item">
+            <p class="paragraf-footer">Social media</p>
             <div>
               <ul class="list social-list-footer">
                 <li class="social-item">
@@ -441,6 +441,28 @@
               </ul>
             </div>
           </div>
+          <div class="subscribe-footer-item">
+            <p class="paragraf-footer">Subscribe</p>
+            <form class="subscribe-footer" name="Subscribe" action="">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="E-mail"
+                placeholder="E-mail"
+                id="subscribe"
+                required
+              />
+              <label class="subscribe-lable" for="subscribe"
+                ><button class="footer-button" type="submit">
+                  <div class="footer-button-text">Subscribe</div>
+                  <div>
+                    <svg class="footer-button-icon">
+                      <use href="./images/css/icons.svg#icon-send"></use>
+                    </svg>
+                  </div></button
+              ></label>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -452,10 +474,89 @@
             <use href="./images/css/icons.svg#icon-close"></use>
           </svg>
         </button>
-
         <h2></h2>
-        <!--Заголовок завжди h2 у модальному вікні-->
-        <p></p>
+        <p class="modal-paragragh">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form" name="contact-form">
+          <div class="modal-form-flex" role="group">
+            <div role="group">
+              <label class="form-label" for="user-name">Name</label>
+              <div class="form-fild">
+                <input
+                  class="form-input"
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                  autocomplete="name"
+                  minlength="2"
+                  required
+                  autofocus
+                />
+                <svg class="form-input-icon">
+                  <use href="./images/css/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+            <div role="group">
+              <label class="form-label" for="user-phone">Phone</label>
+              <div class="form-fild">
+                <input
+                  class="form-input"
+                  id="user-phone"
+                  type="tel"
+                  name="user-phone"
+                  autocomplete="tel"
+                  required
+                />
+                <svg class="form-input-icon">
+                  <use href="./images/css/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div role="group">
+              <label class="form-label" for="user-email">Email</label>
+              <div class="form-fild">
+                <input
+                  class="form-input"
+                  id="user-email"
+                  type="email"
+                  name="user-email"
+                  autocomplete="email"
+                  required
+                />
+                <svg class="form-input-icon">
+                  <use href="./images/css/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div role="group">
+              <label class="form-label" for="user-comment">Comment </label
+              ><textarea
+                class="user-comment"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="checkbox-form">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              name="policy"
+              id="policy"
+              required
+            />
+            <span class="checkbox-icon"></span>
+            <label class="checkbox-label" for="policy"
+              >I accept the terms and conditions of the
+              <a class="policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
